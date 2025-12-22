@@ -1,17 +1,9 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// src/App.jsx
+import Home from './pages/Home'
+import './styles/global.css'
 
 function App() {
-
-  return (
-    <nav>
-      <ul>
-        <li>Intro</li>
-      </ul>
-    </nav>
-  )
+  return <Home />
 }
 
 export default App
