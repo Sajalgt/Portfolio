@@ -1,94 +1,112 @@
-/* src/styles/global.css */
+html {
+  scroll-behavior: smooth;
+}
 
-/* Reset & basic font */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
+  background: black;
+  color: white;
 }
 
 /* Navbar styles */
-nav {
-  width: auto;
-  background-color: #1e1e1e;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0rem 2rem;
-  position: sticky;
-  top: 0;
+/*/-------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-nav h2 {
-  font-size: 1.5rem;
+body {
+  padding-top: 80px;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
-nav ul li {
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-nav ul li:hover {
-  color: #00aaff;
-}
-
-
-.hero {
+/* SECTIONS */
+.section {
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  background: linear-gradient(to right, #00aaff, #00ffcc);
-  color: #fff;
+  padding: 100px 8%;
+  scroll-margin-top: 80px;
 }
 
-.hero-container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 40px;
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+    gap: 30px;
+  }
 
-  display: flex;
-  align-items: center;
+  .myimage {
+    justify-content: center;
+  }
+
+  .myimage img {
+    max-width: 300px;
+  }
 }
 
-.headingandparatext {
-  flex: 1;
+/* Hero Text Animations */
+.headingandparatext h1,
+.headingandparatext h2,
+.headingandparatext p {
+  opacity: 0;
+  transform: translateY(20px);
+  animation-fill-mode: forwards;
 }
 
 .headingandparatext h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
+  animation: fadeUp 0.8s ease-out 0.2s forwards;
 }
 
 .headingandparatext h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+  animation: fadeUp 0.8s ease-out 0.4s forwards;
 }
 
 .headingandparatext p {
-  font-size: 1.2rem;
-  max-width: 600px;
+  animation: fadeUp 0.8s ease-out 0.6s forwards;
 }
 
-.myimage{
-  flex: 1; 
-  display: flex;
-  justify-content: flex-end; 
-}
-
+/* Hero Image Animation */
 .myimage img {
-  max-width: 100px;   
-  width: 100%;        
-  height: auto;       
-  border-radius: 12px; 
-  object-fit: cover;   
+  opacity: 0;
+  transform: translateX(50px);
+  animation: slideIn 0.8s ease-out 0.8s forwards;
+}
+
+#about,
+#projects,
+#skills,
+#contact {
+  scroll-margin-top: 90px; /* navbar height + little gap */
+}
+
+
+/* Keyframes */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.section {
+  padding: 80px 20px;
+  text-align: center;
 }
