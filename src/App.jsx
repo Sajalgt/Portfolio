@@ -5,12 +5,15 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contacts";
+import Footer from "./components/Temp";
 import "./styles/global.css";
 import "./styles/hero.css";
 import "./styles/skills.css";
 import "./styles/about.css";
 import "./styles/projects.css";
 import "./styles/navbar.css";
+import "./styles/contact.css";
+import "./styles/footer.css";
 function App() {
   
   return (
@@ -21,6 +24,7 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
+      <Footer />
     </>
   );
 }

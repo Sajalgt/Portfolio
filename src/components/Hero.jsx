@@ -13,13 +13,13 @@ const Hero = () => {
           <p>Developer focused on Java, algorithms, and web technologies, creating solutions that combine performance and precision.</p>
         
          <span className="profiles">
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Sajalgt" target="_blank" rel="noopener noreferrer">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+          <a href="https://linkedin.com/in/sajal-gupta31" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
           </a>
-          <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <a href="https://instagram.com/sajal.gta" target="_blank" rel="noopener noreferrer">
             <FaInstagram />
           </a>
         </span></div>
