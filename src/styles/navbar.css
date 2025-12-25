@@ -6,7 +6,7 @@
   width: 100%;
   height: 80px;
 
-  background-color: #1e1e1e;
+  
   color: white;
 
   display: flex;
@@ -25,7 +25,21 @@
 
 .logo {
   font-size: 1.5rem;
+  animation: logoSlideDown 0.7s ease-out forwards;
 }
+
+
+@keyframes logoSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 /* LINKS */
 .nav-links {
@@ -58,7 +72,7 @@
 }
 
 /* Mobile Responsiveness */
-@media (max-width: 100px) {
+@media (max-width: 600px) {
   .navbar {
     flex-direction: column;
     gap: 15px;

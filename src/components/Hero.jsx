@@ -1,4 +1,4 @@
-import heroImg from "../assets/anom.png";
+import heroImg from "../assets/sajal.png";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import "../styles/hero.css";
 
@@ -22,7 +22,11 @@ const Hero = () => {
           <a href="https://instagram.com/sajal.gta" target="_blank" rel="noopener noreferrer">
             <FaInstagram />
           </a>
-        </span></div>
+        </span >
+        <span className="button">
+          <button className="cv">Download CV</button>
+        </span>
+        </div>
         <div className="myimage">
           <img src={heroImg} alt="Sajal Gupta"></img>
         </div>

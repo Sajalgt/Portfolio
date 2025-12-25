@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${show ? "" : "hide"}`}>
-      <h2 className="logo">Sajal Gupta</h2>
+      <h2 className="logo">Sajal's Portfolio</h2>
 
       <ul className="nav-links">
         <li><a href="#hero">Home</a></li>
