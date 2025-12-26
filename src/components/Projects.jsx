@@ -5,10 +5,18 @@ import "../styles/projects.css";
 const projects = [
   {
     title: "Personal Portfolio Website",
-    status: "In Progress",
+    status: "Completed",
     description:
       "A modern, responsive personal portfolio built using React to showcase my skills, experience, and projects with smooth animations and clean UI.",
     tech: ["React", "CSS", "Framer Motion", "GitHub"],
+  },
+  {
+    title: "Life Goal Tracker",
+    status: "In Progress",
+    description:
+      "A React-based life goal tracker that lets users define goals once and visually track daily progress across an entire month using an interactive calendar and custom charts.",
+    tech: ["React", "JavaScript", "CSS", "Framer Motion", "LocalStorage","Custom Data Visualization","GitHub"],
+
   },
   
 ];
